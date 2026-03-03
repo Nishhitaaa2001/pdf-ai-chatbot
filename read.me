@@ -1,0 +1,48 @@
+# 📄 Nova PDF AI Chatbot
+
+An AI-powered chatbot that allows users to upload one or multiple PDF documents and ask questions in natural language.  
+The system uses Retrieval-Augmented Generation (RAG) to provide accurate, context-based answers from the uploaded files.
+
+---
+
+## 🚀 Features
+
+- 📂 Upload single or multiple PDFs
+- 🤖 Ask questions about document content
+- 🔍 Semantic search using embeddings
+- ⚡ Fast vector retrieval with FAISS
+- 🧠 Gemini LLM for answer generation
+- 💻 Interactive Streamlit interface
+- 🔒 API key input via sidebar
+- 🧹 Clear chat / reset database option
+
+---
+
+## 🧠 How It Works (RAG Pipeline)
+
+PDF Upload → Text Extraction → Chunking → Embeddings → Vector Database → Retrieval → LLM → Answer
+
+---
+
+## 🛠️ Tech Stack
+
+- Frontend: Streamlit
+- LLM: Google Gemini (gemini-2.5-flash)
+- Embeddings: HuggingFace (all-MiniLM-L6-v2)
+- Vector Database: FAISS
+- Document Processing: LangChain
+- Language: Python
+
+---
+
+## 📦 Installation
+
+### 1. Clone Repository
+ 
+ 2. To Run the Application
+    python -m streamlit run app.py
+
+3.
+```bash
+git clone https://github.com/your-username/nova-pdf-ai-chatbot.git
+cd nova-pdf-ai-chatbot
